@@ -1,0 +1,11 @@
+pluginManagement {
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.name == "rdgen") {
+                useModule("com.jetbrains.rd:rd-gen:${requested.version}")
+            }
+        }
+    }
+}
+rootProject.name = 'rd-example'
+
